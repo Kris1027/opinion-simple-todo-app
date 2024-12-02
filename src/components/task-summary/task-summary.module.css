@@ -1,0 +1,13 @@
+.taskSummary {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3rem;
+    padding: 2rem;
+    background-color: #5f9ea0;
+    color: #ffffff;
+    margin-top: 2rem;
+}
+
+.taskSummary span {
+    font-weight: 700;
+}

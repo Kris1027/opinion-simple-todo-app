@@ -2,6 +2,7 @@ import AddForm from './components/add-form/add-form';
 import Container from './components/container/container';
 import Heading from './components/heading/heading';
 import TaskList from './components/task-list/task-list';
+import TaskSummary from './components/task-summary/task-summary';
 import TodayDate from './components/today-date/today-date';
 
 const Todo = () => {
@@ -21,6 +22,9 @@ const Todo = () => {
             <main>
                 <TaskList tasks={tasks} />
             </main>
+            <footer>
+                <TaskSummary />
+            </footer>
         </Container>
     );
 };
