@@ -1,0 +1,13 @@
+.todayDate {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.todayDate span {
+    font-size: 1.4rem;
+}
+
+.todayDate span:first-child {
+    font-weight: 600;
+}
