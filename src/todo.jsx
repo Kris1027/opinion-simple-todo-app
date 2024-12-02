@@ -1,4 +1,4 @@
-import AddButton from './components/add-button/add-button';
+import AddForm from './components/add-form/add-form';
 import Container from './components/container/container';
 import Heading from './components/heading/heading';
 import TaskList from './components/task-list/task-list';
@@ -15,11 +15,11 @@ const Todo = () => {
         <Container>
             <header>
                 <Heading />
+                <AddForm />
                 <TodayDate />
             </header>
             <main>
                 <TaskList tasks={tasks} />
-                <AddButton />
             </main>
         </Container>
     );
