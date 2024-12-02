@@ -1,0 +1,28 @@
+.container {
+    text-align: end;
+    padding: 1rem;
+    background-color: #5f9ea0;
+    color: #ffffff;
+    margin-top: 2rem;
+}
+
+.addButton {
+    width: 5rem;
+    height: 5rem;
+    padding: 0;
+    border-radius: 50%;
+    background-color: hsl(182, 25%, 30%);
+    color: white;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addButton:hover {
+    background-color: hsl(182, 40%, 20%);
+}
+
+.addButton:active {
+    transform: scale(0.9);
+}

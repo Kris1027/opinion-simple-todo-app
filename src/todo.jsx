@@ -1,3 +1,4 @@
+import AddButton from './components/add-button/add-button';
 import Container from './components/container/container';
 import Heading from './components/heading/heading';
 import TaskList from './components/task-list/task-list';
@@ -18,6 +19,7 @@ const Todo = () => {
             </header>
             <main>
                 <TaskList tasks={tasks} />
+                <AddButton />
             </main>
         </Container>
     );
