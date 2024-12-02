@@ -1,0 +1,16 @@
+.taskList {
+    background-color: #f9f9f9;
+    font-size: 1.4rem;
+    padding: 2rem;
+}
+
+.taskList ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style-type: none;
+}
+
+.taskList p {
+    text-align: center;
+}

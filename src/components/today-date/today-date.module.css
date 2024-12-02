@@ -1,7 +1,7 @@
 .todayDate {
     display: flex;
     gap: 1rem;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .todayDate span {

@@ -1,0 +1,21 @@
+.taskListItem {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 1rem;
+}
+
+.taskListItem:hover {
+    background-color: #f0f8ff;
+    transform: translateY(-1px);
+}
+
+.complete {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}

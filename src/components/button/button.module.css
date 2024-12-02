@@ -1,0 +1,43 @@
+.button {
+    background-color: #ffffff;
+    padding: 0.3rem 1rem;
+    font-size: 1.1rem;
+    border: 2px solid;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.button:active {
+    transform: scale(0.9);
+}
+
+.green {
+    border-color: #1b998b;
+    color: #1b998b;
+}
+
+.green:hover {
+    color: #fff;
+    background-color: #1b998b;
+}
+
+.red {
+    border-color: #d7263d;
+    color: #d7263d;
+}
+
+.red:hover {
+    color: #fff;
+    background-color: #d7263d;
+}
+
+.violet {
+    border-color: #2e294e;
+    color: #2e294e;
+}
+
+.violet:hover {
+    color: #fff;
+    background-color: #2e294e;
+}
