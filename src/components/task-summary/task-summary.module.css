@@ -8,6 +8,13 @@
     margin-top: 2rem;
 }
 
+.taskSummary p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .taskSummary span {
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 2rem;
 }

@@ -78,7 +78,7 @@ const Todo = () => {
                 />
             </main>
             <footer>
-                <TaskSummary />
+                <TaskSummary tasks={tasks} />
             </footer>
         </Container>
     );
