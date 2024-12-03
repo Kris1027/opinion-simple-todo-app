@@ -29,6 +29,10 @@ const Todo = () => {
         );
     };
 
+    const handleDeleteTask = (id) => {
+        setTasks(tasks.filter((task) => task.id !== id));
+    };
+
     return (
         <Container>
             <header>
@@ -41,7 +45,11 @@ const Todo = () => {
                 <TodayDate />
             </header>
             <main>
-                <TaskList tasks={tasks} handleToggleCompletion={handleToggleCompletion} />
+                <TaskList
+                    tasks={tasks}
+                    handleToggleCompletion={handleToggleCompletion}
+                    handleDeleteTask={handleDeleteTask}
+                />
             </main>
             <footer>
                 <TaskSummary />

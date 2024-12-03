@@ -1,7 +1,7 @@
 import styles from './task.list.module.css';
 import TaskListItem from '../task-list-item/task-list-item';
 
-const TaskList = ({ tasks, handleToggleCompletion }) => {
+const TaskList = ({ tasks, handleToggleCompletion, handleDeleteTask }) => {
     return (
         <div className={styles.taskList}>
             {tasks && tasks.length ? (
@@ -11,6 +11,7 @@ const TaskList = ({ tasks, handleToggleCompletion }) => {
                             key={task.id}
                             task={task}
                             handleToggleCompletion={handleToggleCompletion}
+                            handleDeleteTask={handleDeleteTask}
                         />
                     ))}
                 </ul>
