@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import AddForm from './components/add-form/add-form';
 import Container from './components/container/container';
 import Heading from './components/heading/heading';
@@ -6,17 +7,31 @@ import TaskSummary from './components/task-summary/task-summary';
 import TodayDate from './components/today-date/today-date';
 
 const Todo = () => {
-    const tasks = [
-        { id: 1, text: 'Zrobić obiad', complete: false },
-        { id: 2, text: 'Wyrzucić śmieci', complete: true },
-        { id: 3, text: 'Wyjść z psem na długi spacer', complete: false },
-    ];
+    const [tasks, setTasks] = useState([]);
+    const [taskInput, setTaskInput] = useState('');
+
+    const handleAddTask = (e) => {
+        e.preventDefault();
+        if (taskInput.trim() !== '') {
+            const newTask = {
+                id: Math.random(),
+                text: taskInput,
+                complete: false,
+            };
+            setTasks([...tasks, newTask]);
+            setTaskInput('');
+        }
+    };
 
     return (
         <Container>
             <header>
                 <Heading />
-                <AddForm />
+                <AddForm
+                    taskInput={taskInput}
+                    setTaskInput={setTaskInput}
+                    handleAddTask={handleAddTask}
+                />
                 <TodayDate />
             </header>
             <main>

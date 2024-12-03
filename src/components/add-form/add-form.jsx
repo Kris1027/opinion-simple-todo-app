@@ -1,9 +1,14 @@
 import styles from './add-form.module.css';
 
-const AddForm = () => {
+const AddForm = ({ taskInput, setTaskInput, handleAddTask }) => {
     return (
-        <form className={styles.addForm}>
-            <input type='text' placeholder='Create a new todo...' />
+        <form onSubmit={handleAddTask} className={styles.addForm}>
+            <input
+                value={taskInput}
+                onChange={(e) => setTaskInput(e.target.value)}
+                type='text'
+                placeholder='Create a new todo...'
+            />
             <button type='submit' hidden />
         </form>
     );
