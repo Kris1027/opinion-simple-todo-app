@@ -7,6 +7,11 @@
     padding: 2rem;
 }
 
+.heading img {
+    width: 100%;
+    max-width: 180px;
+}
+
 .heading h1 {
     color: #1c3c78;
     font-size: 1rem;
