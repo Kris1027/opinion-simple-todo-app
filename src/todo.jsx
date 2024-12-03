@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import AddForm from './components/add-form/add-form';
 import Container from './components/container/container';
 import Heading from './components/heading/heading';
@@ -6,13 +6,18 @@ import TaskList from './components/task-list/task-list';
 import TaskSummary from './components/task-summary/task-summary';
 import TodayDate from './components/today-date/today-date';
 
+import { getTasksFromLocalStorage, saveTasksToLocalStorage } from './utils/local-storage';
 import { addDate, addTime } from './utils/date-formatter';
 
 const Todo = () => {
-    const [tasks, setTasks] = useState([]);
+    const [tasks, setTasks] = useState(getTasksFromLocalStorage);
     const [taskInput, setTaskInput] = useState('');
     const [editingTask, setEditingTask] = useState(null);
     const [editTaskInput, setEditTaskInput] = useState('');
+
+    useEffect(() => {
+        saveTasksToLocalStorage(tasks);
+    }, [tasks]);
 
     const handleAddTask = (e) => {
         e.preventDefault();
