@@ -10,7 +10,7 @@ const AddForm = ({ taskInput, setTaskInput, handleAddTask }) => {
                 type='text'
                 placeholder='Create a new task...'
             />
-            <button className={styles.subButton} type='submit'>
+            <button disabled={taskInput.trim() === ''} className={styles.subButton} type='submit'>
                 <MdAddCircleOutline size={20} />
             </button>
         </form>

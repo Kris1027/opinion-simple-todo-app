@@ -49,4 +49,12 @@
     .subButton:active {
         transform: scale(0.8);
     }
+
+    .subButton:disabled {
+        background-color: #d3d3d3;
+        border: none;
+        color: #a9a9a9;
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
 }
