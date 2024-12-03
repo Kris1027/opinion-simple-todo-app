@@ -23,7 +23,7 @@ const Todo = () => {
         }
     };
 
-    const handleToggleCompletion = (id) => {
+    const handleToggleTaskCompletion = (id) => {
         setTasks(
             tasks.map((task) => (task.id === id ? { ...task, complete: !task.complete } : task))
         );
@@ -47,7 +47,7 @@ const Todo = () => {
             <main>
                 <TaskList
                     tasks={tasks}
-                    handleToggleCompletion={handleToggleCompletion}
+                    handleToggleTaskCompletion={handleToggleTaskCompletion}
                     handleDeleteTask={handleDeleteTask}
                 />
             </main>
