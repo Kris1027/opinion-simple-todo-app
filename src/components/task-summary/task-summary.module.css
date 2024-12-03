@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-around;
     padding: 2rem;
-    background-color: #5f9ea0;
-    color: #ffffff;
-    margin-top: 2rem;
+    background-color: #fff;
+    color: #1c3c78;
+    margin-top: 3rem;
 }
 
 .taskSummary p {
@@ -38,6 +38,7 @@
     .taskSummary {
         border-radius: 0;
         font-size: 1rem;
+        margin-top: 1.5rem;
     }
 
     .taskSummary p {

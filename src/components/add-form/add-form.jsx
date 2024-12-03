@@ -1,4 +1,3 @@
-import { MdAddCircleOutline } from 'react-icons/md';
 import styles from './add-form.module.css';
 
 const AddForm = ({ taskInput, setTaskInput, handleAddTask }) => {
@@ -8,11 +7,9 @@ const AddForm = ({ taskInput, setTaskInput, handleAddTask }) => {
                 value={taskInput}
                 onChange={(e) => setTaskInput(e.target.value)}
                 type='text'
-                placeholder='Create a new task...'
+                placeholder='Create a new task and press enter...'
             />
-            <button disabled={taskInput.trim() === ''} className={styles.subButton} type='submit'>
-                <MdAddCircleOutline size={20} />
-            </button>
+            <button disabled={taskInput.trim() === ''} hidden type='submit' />
         </form>
     );
 };
