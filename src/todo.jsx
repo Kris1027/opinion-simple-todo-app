@@ -23,6 +23,12 @@ const Todo = () => {
         }
     };
 
+    const handleToggleCompletion = (id) => {
+        setTasks(
+            tasks.map((task) => (task.id === id ? { ...task, complete: !task.complete } : task))
+        );
+    };
+
     return (
         <Container>
             <header>
@@ -35,7 +41,7 @@ const Todo = () => {
                 <TodayDate />
             </header>
             <main>
-                <TaskList tasks={tasks} />
+                <TaskList tasks={tasks} handleToggleCompletion={handleToggleCompletion} />
             </main>
             <footer>
                 <TaskSummary />
