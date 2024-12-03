@@ -2,6 +2,10 @@
 
 A minimalistic and user-friendly Todo application built with React and Vite. This application allows users to manage their daily tasks with basic CRUD operations and a clean interface.
 
+## 🌐 Live Demo
+
+Check out the live version of the application here: [Opinion Simple Todo App](https://opinion-simple-todo-app.netlify.app/)
+
 ## 🚀 Features
 
 -   Create, read, update, and delete tasks
@@ -23,7 +27,7 @@ A minimalistic and user-friendly Todo application built with React and Vite. Thi
 1. Clone the repository:
 
 ```bash
-git clone
+git clone git@github.com:Kris1027/opinion-simple-todo-app.git
 ```
 
 2. Install dependencies:
