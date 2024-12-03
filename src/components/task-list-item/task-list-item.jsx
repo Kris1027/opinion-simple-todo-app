@@ -1,6 +1,9 @@
+import styles from './task-list-item.module.css';
 import Button from '../button/button';
 import EditForm from '../edit-form/edit-form';
-import styles from './task-list-item.module.css';
+
+import { FaCheckCircle, FaEdit, FaUndoAlt } from 'react-icons/fa';
+import { MdDelete } from 'react-icons/md';
 
 const TaskListItem = ({
     task,
@@ -24,7 +27,9 @@ const TaskListItem = ({
                 />
             ) : (
                 <>
-                    <span className={task.complete ? styles.complete : ''}>{task.text}</span>
+                    <span className={`${task.complete ? styles.complete : ''} ${styles.text}`}>
+                        {task.text}
+                    </span>
                     <div className={styles.panel}>
                         <span>
                             {task.date}, {task.time}
@@ -34,15 +39,15 @@ const TaskListItem = ({
                                 onClick={() => handleToggleTaskCompletion(task.id)}
                                 color='green'
                             >
-                                {task.complete ? 'Undo' : 'Done'}
+                                {task.complete ? <FaUndoAlt /> : <FaCheckCircle />}
                             </Button>
                             {!task.complete && (
                                 <Button onClick={() => handleStartEditing(task)} color='violet'>
-                                    Edit
+                                    <FaEdit />
                                 </Button>
                             )}
                             <Button onClick={() => handleDeleteTask(task.id)} color='red'>
-                                Delete
+                                <MdDelete />
                             </Button>
                         </div>
                     </div>
