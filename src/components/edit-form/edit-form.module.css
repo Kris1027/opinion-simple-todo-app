@@ -29,7 +29,7 @@
     }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 425px) {
     .editForm {
         flex-direction: column;
         width: 100%;

@@ -47,19 +47,17 @@
     }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 425px) {
     .text {
+        padding: 0.5rem 0;
         font-size: 0.8rem;
-        padding: 0.5rem;
     }
 
     .panel span {
         font-size: 0.5rem;
     }
-}
 
-@media screen and (max-width: 400px) {
-    .text {
-        padding: 0.5rem 0;
+    .buttons {
+        gap: 0.2rem;
     }
 }

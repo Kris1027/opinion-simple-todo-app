@@ -6,19 +6,12 @@
 
 @media screen and (max-width: 768px) {
     .container {
-        width: 500px;
+        width: 100vw;
     }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 425px) {
     .container {
-        width: 370px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .container {
-        width: 100%;
         border-radius: 0;
     }
 }

@@ -22,7 +22,7 @@
     }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 425px) {
     .todayDate {
         padding: 0.5rem;
     }
