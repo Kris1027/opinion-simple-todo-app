@@ -12,6 +12,23 @@
     transform: scale(0.9);
 }
 
+.button:disabled {
+    background-color: #d3d3d3;
+    color: #a9a9a9;
+    border: none;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.button:disabled:hover {
+    background-color: #d3d3d3;
+    color: #a9a9a9;
+}
+
+.button:disabled:active {
+    transform: scale(1);
+}
+
 .green {
     border-color: #1b998b;
     color: #1b998b;

@@ -1,7 +1,17 @@
 import styles from './task.list.module.css';
 import TaskListItem from '../task-list-item/task-list-item';
 
-const TaskList = ({ tasks, handleToggleTaskCompletion, handleDeleteTask }) => {
+const TaskList = ({
+    tasks,
+    handleToggleTaskCompletion,
+    handleDeleteTask,
+    handleStartEditing,
+    editingTask,
+    handleSaveEditedTask,
+    setEditingTask,
+    editTaskInput,
+    setEditTaskInput,
+}) => {
     return (
         <div className={styles.taskList}>
             {tasks && tasks.length ? (
@@ -12,6 +22,12 @@ const TaskList = ({ tasks, handleToggleTaskCompletion, handleDeleteTask }) => {
                             task={task}
                             handleToggleTaskCompletion={handleToggleTaskCompletion}
                             handleDeleteTask={handleDeleteTask}
+                            handleStartEditing={handleStartEditing}
+                            editingTask={editingTask}
+                            handleSaveEditedTask={handleSaveEditedTask}
+                            setEditingTask={setEditingTask}
+                            editTaskInput={editTaskInput}
+                            setEditTaskInput={setEditTaskInput}
                         />
                     ))}
                 </ul>
