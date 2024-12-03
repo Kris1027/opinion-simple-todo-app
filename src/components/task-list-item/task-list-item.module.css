@@ -1,7 +1,7 @@
 .taskListItem {
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
-    background-color: #ffffff;
     padding: 1rem;
 }
 
@@ -17,5 +17,6 @@
 
 .buttons {
     display: flex;
+    align-items: start;
     gap: 1rem;
 }
