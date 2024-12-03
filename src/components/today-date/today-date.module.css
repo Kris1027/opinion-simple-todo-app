@@ -11,3 +11,19 @@
 .todayDate span:first-child {
     font-weight: 600;
 }
+
+@media screen and (max-width: 768px) {
+    .todayDate {
+        padding: 0.7rem;
+    }
+
+    .todayDate span {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .todayDate {
+        padding: 0.5rem;
+    }
+}

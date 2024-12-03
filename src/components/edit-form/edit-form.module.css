@@ -2,7 +2,6 @@
     align-items: center;
     display: flex;
     gap: 1rem;
-    justify-content: space-between;
     width: 100%;
 }
 
@@ -18,4 +17,30 @@
 
 .editForm input:focus {
     outline: none;
+}
+
+.panel {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .editForm input {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .editForm {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .editForm input {
+        padding: 0.5rem;
+    }
+
+    .panel {
+        justify-content: space-between;
+        width: 100%;
+    }
 }

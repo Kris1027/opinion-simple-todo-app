@@ -1,7 +1,6 @@
 .taskSummary {
     display: flex;
     justify-content: space-around;
-    font-size: 1.3rem;
     padding: 2rem;
     background-color: #5f9ea0;
     color: #ffffff;
@@ -9,12 +8,43 @@
 }
 
 .taskSummary p {
-    display: flex;
     align-items: center;
+    display: flex;
+    font-size: 1.3rem;
     gap: 0.5rem;
 }
 
 .taskSummary span {
     font-weight: 600;
     font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .taskSummary {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .taskSummary p {
+        font-size: 1rem;
+    }
+
+    .taskSummary span {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .taskSummary {
+        border-radius: 0;
+        font-size: 1rem;
+    }
+
+    .taskSummary p {
+        font-size: 0.7rem;
+    }
+
+    .taskSummary span {
+        font-size: 1rem;
+    }
 }

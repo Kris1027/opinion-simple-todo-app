@@ -15,3 +15,17 @@
 .taskList p {
     text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+    .taskList {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .taskList {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+}

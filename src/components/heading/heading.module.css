@@ -4,3 +4,16 @@
     background-color: #5f9ea0;
     color: #ffffff;
 }
+
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .heading {
+        font-size: 1.2rem;
+    }
+}

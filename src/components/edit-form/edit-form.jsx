@@ -13,12 +13,14 @@ const EditForm = ({ handleSaveEditedTask, setEditingTask, editTaskInput, setEdit
                 type='text'
                 placeholder='Edit a task...'
             />
-            <Button type='submit' disabled={editTaskInput.trim() === ''} color='green'>
-                <FaCheck />
-            </Button>
-            <Button onClick={() => setEditingTask(null)} type='button' color='red'>
-                <MdCancel />
-            </Button>
+            <div className={styles.panel}>
+                <Button type='submit' disabled={editTaskInput.trim() === ''} color='green'>
+                    <FaCheck />
+                </Button>
+                <Button onClick={() => setEditingTask(null)} type='button' color='red'>
+                    <MdCancel />
+                </Button>
+            </div>
         </form>
     );
 };

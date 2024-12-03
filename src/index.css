@@ -11,6 +11,24 @@ body {
     font-family: 'Montserrat', sans-serif;
     justify-content: center;
     min-height: 100vh;
-    padding: 2rem 0;
     width: 100vw;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    body {
+        padding: 0.3rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        padding: 0;
+    }
 }

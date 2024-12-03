@@ -11,3 +11,10 @@
 .addForm input:focus {
     outline: none;
 }
+
+@media screen and (max-width: 768px) {
+    .addForm input {
+        font-size: 0.8rem;
+        padding: 0.8rem;
+    }
+}

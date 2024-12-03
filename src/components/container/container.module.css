@@ -1,5 +1,24 @@
 .container {
     border-radius: 10px;
     overflow: hidden;
-    width: 800px;
+    width: 768px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .container {
+        width: 370px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: 100%;
+        border-radius: 0;
+    }
 }
