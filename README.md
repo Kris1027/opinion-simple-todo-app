@@ -1,8 +1,53 @@
-# React + Vite
+# Opinion Simple Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimalistic and user-friendly Todo application built with React and Vite. This application allows users to manage their daily tasks with basic CRUD operations and a clean interface.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   Create, read, update, and delete tasks
+-   Mark tasks as complete/incomplete
+-   Responsive design for all devices
+-   Task creation date and time tracking
+-   Task summary statistics
+
+## 🛠️ Technologies
+
+-   React
+-   Vite
+-   CSS Modules
+-   React Icons
+-   ESLint
+
+## 🏃‍♂️ Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone
+```
+
+2. Install dependencies:
+
+```bash
+cd opinion-simple-todo-app
+npm install
+```
+
+3. Run the development server:
+
+```bash
+npm run dev
+```
+
+4. Build for production:
+
+```bash
+npm run build
+```
+
+## 🔧 Available Scripts
+
+-   `npm run dev` - Starts development server
+-   `npm run build` - Builds the app for production
+-   `npm run lint` - Runs ESLint
+-   `npm run preview` - Preview production build locally
