@@ -7,7 +7,7 @@ const AddForm = ({ taskInput, setTaskInput, handleAddTask }) => {
                 value={taskInput}
                 onChange={(e) => setTaskInput(e.target.value)}
                 type='text'
-                placeholder='Create a new todo...'
+                placeholder='Create a new task...'
             />
             <button type='submit' hidden />
         </form>
