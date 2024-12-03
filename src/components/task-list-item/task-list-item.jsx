@@ -25,19 +25,27 @@ const TaskListItem = ({
             ) : (
                 <>
                     <span className={task.complete ? styles.complete : ''}>{task.text}</span>
-                    <span className={styles.buttons}>
-                        <Button onClick={() => handleToggleTaskCompletion(task.id)} color='green'>
-                            {task.complete ? 'Undo' : 'Done'}
-                        </Button>
-                        {!task.complete && (
-                            <Button onClick={() => handleStartEditing(task)} color='violet'>
-                                Edit
+                    <div className={styles.panel}>
+                        <span>
+                            {task.date}, {task.time}
+                        </span>
+                        <div className={styles.buttons}>
+                            <Button
+                                onClick={() => handleToggleTaskCompletion(task.id)}
+                                color='green'
+                            >
+                                {task.complete ? 'Undo' : 'Done'}
                             </Button>
-                        )}
-                        <Button onClick={() => handleDeleteTask(task.id)} color='red'>
-                            Delete
-                        </Button>
-                    </span>
+                            {!task.complete && (
+                                <Button onClick={() => handleStartEditing(task)} color='violet'>
+                                    Edit
+                                </Button>
+                            )}
+                            <Button onClick={() => handleDeleteTask(task.id)} color='red'>
+                                Delete
+                            </Button>
+                        </div>
+                    </div>
                 </>
             )}
         </li>

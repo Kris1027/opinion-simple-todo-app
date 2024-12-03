@@ -6,6 +6,8 @@ import TaskList from './components/task-list/task-list';
 import TaskSummary from './components/task-summary/task-summary';
 import TodayDate from './components/today-date/today-date';
 
+import { addDate, addTime } from './utils/date-formatter';
+
 const Todo = () => {
     const [tasks, setTasks] = useState([]);
     const [taskInput, setTaskInput] = useState('');
@@ -19,6 +21,8 @@ const Todo = () => {
                 id: Math.random(),
                 text: taskInput,
                 complete: false,
+                date: addDate,
+                time: addTime,
             };
             setTasks([...tasks, newTask]);
             setTaskInput('');
